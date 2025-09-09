@@ -15,7 +15,7 @@ Owner: Yu Yang
 ```{r}
 #| include: false
 1+1
-
+```
 --------------
 Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
 
@@ -43,3 +43,4 @@ leaflet() |>
   setView(baruch_longitude, baruch_latitude, zoom=17) |>
   addPopups(baruch_longitude, baruch_latitude,
             "I am a Master's student at <b>Baruch College</b>!")
+```
