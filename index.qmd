@@ -1,0 +1,45 @@
+---
+title: "STA9750 Submission Materials"
+---
+
+# Welcome  
+
+This site contains submission materials for **STA9750 – Fall 2025** at Baruch College.  
+
+Owner: Yu Yang  
+
+---
+
+# Last Updated  
+
+```{r}
+#| include: false
+1+1
+
+--------------
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
+
+
+---
+
+# Baruch Map
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+if(!require("leaflet")){
+  options(repos=c(CRAN="https://cloud.r-project.org"))
+  install.packages("leaflet")
+  stopifnot(require("leaflet"))
+}
+
+baruch_longitude <- -73.98333
+baruch_latitude <- 40.75028
+
+leaflet() |>
+  addTiles() |>
+  setView(baruch_longitude, baruch_latitude, zoom=17) |>
+  addPopups(baruch_longitude, baruch_latitude,
+            "I am a Master's student at <b>Baruch College</b>!")
