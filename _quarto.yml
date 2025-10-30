@@ -12,8 +12,11 @@ website:
 
 format:
   html:
-    theme: sandstone
-    toc: false
+    theme: cosmo
+    toc: true
+    toc-location: right
+    toc-depth: 2
+    number-sections: true
 
 editor:
   mode: source
