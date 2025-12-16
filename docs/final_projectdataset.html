@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Final Project Dataset – STA 9750 Submission Material</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fad5ab29a14bbe0a7a7d29177f3f13bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">STA 9750 Submission Material</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project Dataset</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Setup download directory ----</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'janitor' was built under R version 4.5.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'janitor'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    chisq.test, fisher.test</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="ot">&lt;-</span> <span class="st">"data/property_sales_raw"</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(data_dir, <span class="at">recursive =</span> <span class="cn">TRUE</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>base_url <span class="ot">&lt;-</span> <span class="st">"https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales"</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>years    <span class="ot">&lt;-</span> <span class="dv">2013</span><span class="sc">:</span><span class="dv">2023</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>boroughs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"bronx"</span>, <span class="st">"brooklyn"</span>, <span class="st">"manhattan"</span>, <span class="st">"queens"</span>, <span class="st">"statenisland"</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Helper to try one URL and return success TRUE/FALSE</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>safe_download <span class="ot">&lt;-</span> <span class="cf">function</span>(url, dest) {</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  status <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>(</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">download.file</span>(url, <span class="at">destfile =</span> dest, <span class="at">mode =</span> <span class="st">"wb"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">error =</span> <span class="cf">function</span>(e) <span class="dv">1</span>L</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">is.numeric</span>(status) <span class="sc">&amp;&amp;</span> status <span class="sc">==</span> <span class="dv">0</span>L</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Function to download one file ----</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>download_one_file <span class="ot">&lt;-</span> <span class="cf">function</span>(year, borough) {</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pick correct borough slug for the filename</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>  borough_slug <span class="ot">&lt;-</span> borough</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (borough <span class="sc">==</span> <span class="st">"statenisland"</span> <span class="sc">&amp;&amp;</span> year <span class="sc">&gt;=</span> <span class="dv">2020</span>) {</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    borough_slug <span class="ot">&lt;-</span> <span class="st">"staten_island"</span>   <span class="co"># 2020+ files use underscore</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># older years = .xls, newer years = .xlsx</span></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (year <span class="sc">&lt;=</span> <span class="dv">2017</span>) {</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    exts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"xls"</span>, <span class="st">"xlsx"</span>)</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    exts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"xlsx"</span>, <span class="st">"xls"</span>)</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (ext <span class="cf">in</span> exts) {</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    url  <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"%s/%d/%d_%s.%s"</span>, base_url, year, year, borough_slug, ext)</span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>    dest <span class="ot">&lt;-</span> <span class="fu">file.path</span>(data_dir, <span class="fu">sprintf</span>(<span class="st">"%d_%s.%s"</span>, year, borough_slug, ext))</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">message</span>(<span class="st">"Trying: "</span>, url)</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">safe_download</span>(url, dest)) {</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>      <span class="fu">message</span>(<span class="st">"  ✓ downloaded: "</span>, dest)</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(dest)</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>      <span class="fu">message</span>(<span class="st">"  ✗ failed for: "</span>, url)</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">warning</span>(<span class="st">"Could not download file for "</span>, year, <span class="st">" / "</span>, borough)</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NA_character_</span></span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Download ALL 2013–2023 files ----</span></span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="fu">unlist</span>(</span>
+<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(years, <span class="cf">function</span>(y) {</span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sapply</span>(boroughs, download_one_file, <span class="at">year =</span> y, <span class="at">simplify =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2013/2013_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2013_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2013/2013_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2013_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2013/2013_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2013_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2013/2013_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2013_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2013/2013_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2013_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2014/2014_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2014_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2014/2014_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2014_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2014/2014_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2014_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2014/2014_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2014_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2014/2014_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2014_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2015/2015_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2015_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2015/2015_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2015_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2015/2015_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2015_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2015/2015_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2015_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2015/2015_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2015_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2016/2016_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2016_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2016/2016_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2016_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2016/2016_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2016_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2016/2016_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2016_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2016/2016_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2016_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2017/2017_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2017_bronx.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2017/2017_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2017_brooklyn.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2017/2017_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2017_manhattan.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2017/2017_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2017_queens.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2017/2017_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2017_statenisland.xls</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2018/2018_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2018_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2018/2018_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2018_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2018/2018_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2018_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2018/2018_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2018_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2018/2018_statenisland.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2018_statenisland.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2019/2019_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2019_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2019/2019_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2019_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2019/2019_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2019_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2019/2019_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2019_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2019/2019_statenisland.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2019_statenisland.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2020/2020_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2020_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2020/2020_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2020_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2020/2020_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2020_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2020/2020_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2020_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2020/2020_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2020_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2021/2021_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2021_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2021/2021_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2021_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2021/2021_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2021_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2021/2021_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2021_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2021/2021_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2021_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2022/2022_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2022_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2022/2022_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2022_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2022/2022_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2022_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2022/2022_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2022_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2022/2022_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2022_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2023/2023_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2023_bronx.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2023/2023_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2023_brooklyn.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2023/2023_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2023_manhattan.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2023/2023_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2023_queens.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Trying: https://www.nyc.gov/assets/finance/downloads/pdf/rolling_sales/annualized-sales/2023/2023_staten_island.xlsx</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  ✓ downloaded: data/property_sales_raw/2023_staten_island.xlsx</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="co"># keep only successful downloads</span></span>
+<span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> files[<span class="sc">!</span><span class="fu">is.na</span>(files)]</span>
+<span id="cb120-3"><a href="#cb120-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb120-4"><a href="#cb120-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Quick check: which years did we actually download?</span></span>
+<span id="cb120-5"><a href="#cb120-5" aria-hidden="true" tabindex="-1"></a>download_years <span class="ot">&lt;-</span> <span class="fu">table</span>(<span class="fu">substr</span>(<span class="fu">basename</span>(files), <span class="dv">1</span>, <span class="dv">4</span>))</span>
+<span id="cb120-6"><a href="#cb120-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(download_years)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 
+   5    5    5    5    5    5    5    5    5    5    5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Read and combine ----</span></span>
+<span id="cb122-2"><a href="#cb122-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Read and combine (using BOROUGH row as header) ----</span></span>
+<span id="cb122-3"><a href="#cb122-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb122-4"><a href="#cb122-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb122-5"><a href="#cb122-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb122-6"><a href="#cb122-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-7"><a href="#cb122-7" aria-hidden="true" tabindex="-1"></a>sales_list <span class="ot">&lt;-</span> <span class="fu">lapply</span>(files, <span class="cf">function</span>(f) {</span>
+<span id="cb122-8"><a href="#cb122-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-9"><a href="#cb122-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># read everything as text, no column names yet</span></span>
+<span id="cb122-10"><a href="#cb122-10" aria-hidden="true" tabindex="-1"></a>  raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
+<span id="cb122-11"><a href="#cb122-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">path      =</span> f,</span>
+<span id="cb122-12"><a href="#cb122-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">col_names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb122-13"><a href="#cb122-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">col_types =</span> <span class="st">"text"</span></span>
+<span id="cb122-14"><a href="#cb122-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb122-15"><a href="#cb122-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-16"><a href="#cb122-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># find the row that contains the real header ("BOROUGH ...")</span></span>
+<span id="cb122-17"><a href="#cb122-17" aria-hidden="true" tabindex="-1"></a>  header_row <span class="ot">&lt;-</span> <span class="fu">which</span>(raw[[<span class="dv">1</span>]] <span class="sc">==</span> <span class="st">"BOROUGH"</span>)</span>
+<span id="cb122-18"><a href="#cb122-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(header_row) <span class="sc">==</span> <span class="dv">0</span>L) {</span>
+<span id="cb122-19"><a href="#cb122-19" aria-hidden="true" tabindex="-1"></a>    header_row <span class="ot">&lt;-</span> <span class="fu">which</span>(<span class="fu">grepl</span>(<span class="st">"BOROUGH"</span>, raw[[<span class="dv">1</span>]]))[<span class="dv">1</span>]</span>
+<span id="cb122-20"><a href="#cb122-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb122-21"><a href="#cb122-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(header_row)) {</span>
+<span id="cb122-22"><a href="#cb122-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Could not find header row in file: "</span>, f)</span>
+<span id="cb122-23"><a href="#cb122-23" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb122-24"><a href="#cb122-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-25"><a href="#cb122-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># use that row as column names, data starts on the next row</span></span>
+<span id="cb122-26"><a href="#cb122-26" aria-hidden="true" tabindex="-1"></a>  header <span class="ot">&lt;-</span> <span class="fu">as.character</span>(<span class="fu">unlist</span>(raw[header_row, ]))</span>
+<span id="cb122-27"><a href="#cb122-27" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> raw[(header_row <span class="sc">+</span> <span class="dv">1</span>)<span class="sc">:</span><span class="fu">nrow</span>(raw), ]</span>
+<span id="cb122-28"><a href="#cb122-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(df) <span class="ot">&lt;-</span> header</span>
+<span id="cb122-29"><a href="#cb122-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-30"><a href="#cb122-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># drop completely empty rows/cols</span></span>
+<span id="cb122-31"><a href="#cb122-31" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb122-32"><a href="#cb122-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">remove_empty</span>(<span class="st">"rows"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb122-33"><a href="#cb122-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">remove_empty</span>(<span class="st">"cols"</span>)</span>
+<span id="cb122-34"><a href="#cb122-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-35"><a href="#cb122-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add year from file name (e.g. "2019_bronx.xlsx")</span></span>
+<span id="cb122-36"><a href="#cb122-36" aria-hidden="true" tabindex="-1"></a>  name <span class="ot">&lt;-</span> <span class="fu">basename</span>(f)</span>
+<span id="cb122-37"><a href="#cb122-37" aria-hidden="true" tabindex="-1"></a>  year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">substr</span>(name, <span class="dv">1</span>, <span class="dv">4</span>))</span>
+<span id="cb122-38"><a href="#cb122-38" aria-hidden="true" tabindex="-1"></a>  df<span class="sc">$</span>year <span class="ot">&lt;-</span> year</span>
+<span id="cb122-39"><a href="#cb122-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-40"><a href="#cb122-40" aria-hidden="true" tabindex="-1"></a>  df</span>
+<span id="cb122-41"><a href="#cb122-41" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...1`
+• `` -&gt; `...2`
+• `` -&gt; `...3`
+• `` -&gt; `...4`
+• `` -&gt; `...5`
+• `` -&gt; `...6`
+• `` -&gt; `...7`
+• `` -&gt; `...8`
+• `` -&gt; `...9`
+• `` -&gt; `...10`
+• `` -&gt; `...11`
+• `` -&gt; `...12`
+• `` -&gt; `...13`
+• `` -&gt; `...14`
+• `` -&gt; `...15`
+• `` -&gt; `...16`
+• `` -&gt; `...17`
+• `` -&gt; `...18`
+• `` -&gt; `...19`
+• `` -&gt; `...20`
+• `` -&gt; `...21`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+New names:
+• `` -&gt; `...1`
+• `` -&gt; `...2`
+• `` -&gt; `...3`
+• `` -&gt; `...4`
+• `` -&gt; `...5`
+• `` -&gt; `...6`
+• `` -&gt; `...7`
+• `` -&gt; `...8`
+• `` -&gt; `...9`
+• `` -&gt; `...10`
+• `` -&gt; `...11`
+• `` -&gt; `...12`
+• `` -&gt; `...13`
+• `` -&gt; `...14`
+• `` -&gt; `...15`
+• `` -&gt; `...16`
+• `` -&gt; `...17`
+• `` -&gt; `...18`
+• `` -&gt; `...19`
+• `` -&gt; `...20`
+• `` -&gt; `...21`</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a>sales_2013_2023 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(sales_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb126-2"><a href="#cb126-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb126-3"><a href="#cb126-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-4"><a href="#cb126-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Split into 3 format groups ----</span></span>
+<span id="cb126-5"><a href="#cb126-5" aria-hidden="true" tabindex="-1"></a>sales_raw_2013_2017 <span class="ot">&lt;-</span> sales_2013_2023 <span class="sc">%&gt;%</span></span>
+<span id="cb126-6"><a href="#cb126-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">2013</span>, year <span class="sc">&lt;=</span> <span class="dv">2017</span>)</span>
+<span id="cb126-7"><a href="#cb126-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-8"><a href="#cb126-8" aria-hidden="true" tabindex="-1"></a>sales_raw_2018_2019 <span class="ot">&lt;-</span> sales_2013_2023 <span class="sc">%&gt;%</span></span>
+<span id="cb126-9"><a href="#cb126-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">2018</span>, year <span class="sc">&lt;=</span> <span class="dv">2019</span>)</span>
+<span id="cb126-10"><a href="#cb126-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-11"><a href="#cb126-11" aria-hidden="true" tabindex="-1"></a>sales_raw_2020_2023 <span class="ot">&lt;-</span> sales_2013_2023 <span class="sc">%&gt;%</span></span>
+<span id="cb126-12"><a href="#cb126-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">2020</span>, year <span class="sc">&lt;=</span> <span class="dv">2023</span>)</span>
+<span id="cb126-13"><a href="#cb126-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-14"><a href="#cb126-14" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Quick checks ----</span></span>
+<span id="cb126-15"><a href="#cb126-15" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Check years in each split:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Check years in each split:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">table</span>(sales_raw_2013_2017<span class="sc">$</span>year))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 2013  2014  2015  2016  2017 
+89974 88687 91446 89806 88660 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">table</span>(sales_raw_2018_2019<span class="sc">$</span>year))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 2018  2019 
+83782 83920 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">table</span>(sales_raw_2020_2023<span class="sc">$</span>year))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 2020  2021  2022  2023 
+68684 99090 93427 76411 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Row counts:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Row counts:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(sales_raw_2013_2017)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 448573</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb138"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(sales_raw_2018_2019)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 167702</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb140"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(sales_raw_2020_2023)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 337612</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb142"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Column counts (should be similar within each group):"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Column counts (should be similar within each group):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb144"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(sales_raw_2013_2017)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 64</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb146"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(sales_raw_2018_2019)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 64</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb148"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(sales_raw_2020_2023)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 64</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb150"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a>clean_2013_2017 <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb150-2"><a href="#cb150-2" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">%&gt;%</span></span>
+<span id="cb150-3"><a href="#cb150-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">clean_names</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb150-4"><a href="#cb150-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(borough <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"1"</span>,<span class="st">"2"</span>,<span class="st">"3"</span>,<span class="st">"4"</span>,<span class="st">"5"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb150-5"><a href="#cb150-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb150-6"><a href="#cb150-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough =</span> <span class="fu">case_when</span>(</span>
+<span id="cb150-7"><a href="#cb150-7" aria-hidden="true" tabindex="-1"></a>        borough <span class="sc">==</span> <span class="st">"1"</span> <span class="sc">~</span> <span class="st">"Manhattan"</span>,</span>
+<span id="cb150-8"><a href="#cb150-8" aria-hidden="true" tabindex="-1"></a>        borough <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">~</span> <span class="st">"Bronx"</span>,</span>
+<span id="cb150-9"><a href="#cb150-9" aria-hidden="true" tabindex="-1"></a>        borough <span class="sc">==</span> <span class="st">"3"</span> <span class="sc">~</span> <span class="st">"Brooklyn"</span>,</span>
+<span id="cb150-10"><a href="#cb150-10" aria-hidden="true" tabindex="-1"></a>        borough <span class="sc">==</span> <span class="st">"4"</span> <span class="sc">~</span> <span class="st">"Queens"</span>,</span>
+<span id="cb150-11"><a href="#cb150-11" aria-hidden="true" tabindex="-1"></a>        borough <span class="sc">==</span> <span class="st">"5"</span> <span class="sc">~</span> <span class="st">"Staten Island"</span></span>
+<span id="cb150-12"><a href="#cb150-12" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb150-13"><a href="#cb150-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_price =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, sale_price))),</span>
+<span id="cb150-14"><a href="#cb150-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date  =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.Date</span>(<span class="fu">as.numeric</span>(sale_date), <span class="at">origin =</span> <span class="st">"1899-12-30"</span>))</span>
+<span id="cb150-15"><a href="#cb150-15" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb150-16"><a href="#cb150-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(sale_price), sale_price <span class="sc">&gt;</span> <span class="dv">10000</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb150-17"><a href="#cb150-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(year, borough, neighborhood, address, zip_code, sale_price, sale_date) <span class="sc">%&gt;%</span></span>
+<span id="cb150-18"><a href="#cb150-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(year, borough, sale_date)</span>
+<span id="cb150-19"><a href="#cb150-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb150-20"><a href="#cb150-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb150-21"><a href="#cb150-21" aria-hidden="true" tabindex="-1"></a>sales_clean_2013_2017 <span class="ot">&lt;-</span> <span class="fu">clean_2013_2017</span>(sales_raw_2013_2017)</span>
+<span id="cb150-22"><a href="#cb150-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb150-23"><a href="#cb150-23" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Quick checks ----</span></span>
+<span id="cb150-24"><a href="#cb150-24" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"2013-2017 cleaned:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>2013-2017 cleaned:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb152"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb152-1"><a href="#cb152-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sales_clean_2013_2017<span class="sc">$</span>sale_price)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+1.000e+04 3.250e+05 5.600e+05 1.592e+06 9.790e+05 4.111e+09 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb154"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb154-1"><a href="#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(sales_clean_2013_2017<span class="sc">$</span>sale_date, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2013-01-01" "2017-12-31"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb156"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb156-1"><a href="#cb156-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sales_clean_2013_2017)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 7
+   year borough neighborhood            address   zip_code sale_price sale_date 
+  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                   &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt; &lt;date&gt;    
+1  2013 Bronx   MELROSE/CONCOURSE       1072 GRA… 10456        270000 2013-01-01
+2  2013 Bronx   KINGSBRIDGE/JEROME PARK 3875 WAL… 10463         94302 2013-01-03
+3  2013 Bronx   MELROSE/CONCOURSE       860 GRAN… 10451         50001 2013-01-03
+4  2013 Bronx   MORRISANIA/LONGWOOD     700-704 … 10455        439082 2013-01-03
+5  2013 Bronx   SOUNDVIEW               1420 NOB… 10472       7050000 2013-01-03
+6  2013 Bronx   THROGS NECK             2921 MIL… 10465        290000 2013-01-03</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb158-2"><a href="#cb158-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb158-3"><a href="#cb158-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb158-4"><a href="#cb158-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'lubridate'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb161"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb161-1"><a href="#cb161-1" aria-hidden="true" tabindex="-1"></a>clean_2018_2019 <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb161-2"><a href="#cb161-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb161-3"><a href="#cb161-3" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">%&gt;%</span></span>
+<span id="cb161-4"><a href="#cb161-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">clean_names</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb161-5"><a href="#cb161-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb161-6"><a href="#cb161-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Merge duplicate columns</span></span>
+<span id="cb161-7"><a href="#cb161-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb161-8"><a href="#cb161-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough_code_raw =</span> <span class="fu">coalesce</span>(borough, borough_2, borough_3),</span>
+<span id="cb161-9"><a href="#cb161-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">neighborhood_raw =</span> <span class="fu">coalesce</span>(neighborhood, neighborhood_2, neighborhood_3),</span>
+<span id="cb161-10"><a href="#cb161-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">address_raw      =</span> <span class="fu">coalesce</span>(address, address_2, address_3),</span>
+<span id="cb161-11"><a href="#cb161-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">zip_code_raw     =</span> <span class="fu">coalesce</span>(zip_code, zip_code_2, zip_code_3),</span>
+<span id="cb161-12"><a href="#cb161-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_price_raw   =</span> <span class="fu">coalesce</span>(sale_price, sale_price_2, sale_price_3),</span>
+<span id="cb161-13"><a href="#cb161-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date_raw    =</span> <span class="fu">coalesce</span>(sale_date, sale_date_2, sale_date_3)</span>
+<span id="cb161-14"><a href="#cb161-14" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb161-15"><a href="#cb161-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb161-16"><a href="#cb161-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Borough code -&gt; name</span></span>
+<span id="cb161-17"><a href="#cb161-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb161-18"><a href="#cb161-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough_code_raw =</span> <span class="fu">trimws</span>(borough_code_raw),</span>
+<span id="cb161-19"><a href="#cb161-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough =</span> <span class="fu">case_when</span>(</span>
+<span id="cb161-20"><a href="#cb161-20" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"1"</span> <span class="sc">~</span> <span class="st">"Manhattan"</span>,</span>
+<span id="cb161-21"><a href="#cb161-21" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">~</span> <span class="st">"Bronx"</span>,</span>
+<span id="cb161-22"><a href="#cb161-22" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"3"</span> <span class="sc">~</span> <span class="st">"Brooklyn"</span>,</span>
+<span id="cb161-23"><a href="#cb161-23" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"4"</span> <span class="sc">~</span> <span class="st">"Queens"</span>,</span>
+<span id="cb161-24"><a href="#cb161-24" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"5"</span> <span class="sc">~</span> <span class="st">"Staten Island"</span>,</span>
+<span id="cb161-25"><a href="#cb161-25" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span></span>
+<span id="cb161-26"><a href="#cb161-26" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb161-27"><a href="#cb161-27" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb161-28"><a href="#cb161-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(borough)) <span class="sc">%&gt;%</span></span>
+<span id="cb161-29"><a href="#cb161-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb161-30"><a href="#cb161-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Clean price</span></span>
+<span id="cb161-31"><a href="#cb161-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb161-32"><a href="#cb161-32" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_price =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, sale_price_raw)))</span>
+<span id="cb161-33"><a href="#cb161-33" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb161-34"><a href="#cb161-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb161-35"><a href="#cb161-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- Robust date parsing ----</span></span>
+<span id="cb161-36"><a href="#cb161-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb161-37"><a href="#cb161-37" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Try numeric Excel serial first</span></span>
+<span id="cb161-38"><a href="#cb161-38" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date_num =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(sale_date_raw)),</span>
+<span id="cb161-39"><a href="#cb161-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">date_from_num =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.Date</span>(sale_date_num, <span class="at">origin =</span> <span class="st">"1899-12-30"</span>)),</span>
+<span id="cb161-40"><a href="#cb161-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb161-41"><a href="#cb161-41" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Try character dates (mdy, ymd)</span></span>
+<span id="cb161-42"><a href="#cb161-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">date_from_char =</span> <span class="fu">suppressWarnings</span>(<span class="fu">parse_date_time</span>(sale_date_raw, <span class="at">orders =</span> <span class="fu">c</span>(<span class="st">"mdy"</span>, <span class="st">"ymd"</span>))),</span>
+<span id="cb161-43"><a href="#cb161-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb161-44"><a href="#cb161-44" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Final date = numeric first, otherwise character-parsed</span></span>
+<span id="cb161-45"><a href="#cb161-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date =</span> <span class="fu">coalesce</span>(date_from_num, date_from_char)</span>
+<span id="cb161-46"><a href="#cb161-46" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb161-47"><a href="#cb161-47" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb161-48"><a href="#cb161-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(sale_price), sale_price <span class="sc">&gt;</span> <span class="dv">10000</span>, <span class="sc">!</span><span class="fu">is.na</span>(sale_date)) <span class="sc">%&gt;%</span></span>
+<span id="cb161-49"><a href="#cb161-49" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb161-50"><a href="#cb161-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(</span>
+<span id="cb161-51"><a href="#cb161-51" aria-hidden="true" tabindex="-1"></a>      year,</span>
+<span id="cb161-52"><a href="#cb161-52" aria-hidden="true" tabindex="-1"></a>      borough,</span>
+<span id="cb161-53"><a href="#cb161-53" aria-hidden="true" tabindex="-1"></a>      <span class="at">neighborhood =</span> neighborhood_raw,</span>
+<span id="cb161-54"><a href="#cb161-54" aria-hidden="true" tabindex="-1"></a>      <span class="at">address      =</span> address_raw,</span>
+<span id="cb161-55"><a href="#cb161-55" aria-hidden="true" tabindex="-1"></a>      <span class="at">zip_code     =</span> zip_code_raw,</span>
+<span id="cb161-56"><a href="#cb161-56" aria-hidden="true" tabindex="-1"></a>      sale_price,</span>
+<span id="cb161-57"><a href="#cb161-57" aria-hidden="true" tabindex="-1"></a>      sale_date</span>
+<span id="cb161-58"><a href="#cb161-58" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb161-59"><a href="#cb161-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(year, borough, sale_date)</span>
+<span id="cb161-60"><a href="#cb161-60" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb162"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb162-2"><a href="#cb162-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb162-3"><a href="#cb162-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb162-4"><a href="#cb162-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb162-5"><a href="#cb162-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-6"><a href="#cb162-6" aria-hidden="true" tabindex="-1"></a>clean_2020_2023 <span class="ot">&lt;-</span> <span class="cf">function</span>(df) {</span>
+<span id="cb162-7"><a href="#cb162-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-8"><a href="#cb162-8" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">%&gt;%</span></span>
+<span id="cb162-9"><a href="#cb162-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">clean_names</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb162-10"><a href="#cb162-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-11"><a href="#cb162-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1) Merge the duplicate columns (_2, _3) into one main set</span></span>
+<span id="cb162-12"><a href="#cb162-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb162-13"><a href="#cb162-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough_code_raw =</span> <span class="fu">coalesce</span>(borough, borough_2, borough_3),</span>
+<span id="cb162-14"><a href="#cb162-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">neighborhood_raw =</span> <span class="fu">coalesce</span>(neighborhood, neighborhood_2, neighborhood_3),</span>
+<span id="cb162-15"><a href="#cb162-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">address_raw      =</span> <span class="fu">coalesce</span>(address, address_2, address_3),</span>
+<span id="cb162-16"><a href="#cb162-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">zip_code_raw     =</span> <span class="fu">coalesce</span>(zip_code, zip_code_2, zip_code_3),</span>
+<span id="cb162-17"><a href="#cb162-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_price_raw   =</span> <span class="fu">coalesce</span>(sale_price, sale_price_2, sale_price_3),</span>
+<span id="cb162-18"><a href="#cb162-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date_raw    =</span> <span class="fu">coalesce</span>(sale_date, sale_date_2, sale_date_3)</span>
+<span id="cb162-19"><a href="#cb162-19" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb162-20"><a href="#cb162-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-21"><a href="#cb162-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2) Borough code -&gt; borough name</span></span>
+<span id="cb162-22"><a href="#cb162-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb162-23"><a href="#cb162-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough_code_raw =</span> <span class="fu">trimws</span>(borough_code_raw),</span>
+<span id="cb162-24"><a href="#cb162-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">borough =</span> <span class="fu">case_when</span>(</span>
+<span id="cb162-25"><a href="#cb162-25" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"1"</span> <span class="sc">~</span> <span class="st">"Manhattan"</span>,</span>
+<span id="cb162-26"><a href="#cb162-26" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">~</span> <span class="st">"Bronx"</span>,</span>
+<span id="cb162-27"><a href="#cb162-27" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"3"</span> <span class="sc">~</span> <span class="st">"Brooklyn"</span>,</span>
+<span id="cb162-28"><a href="#cb162-28" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"4"</span> <span class="sc">~</span> <span class="st">"Queens"</span>,</span>
+<span id="cb162-29"><a href="#cb162-29" aria-hidden="true" tabindex="-1"></a>        borough_code_raw <span class="sc">==</span> <span class="st">"5"</span> <span class="sc">~</span> <span class="st">"Staten Island"</span>,</span>
+<span id="cb162-30"><a href="#cb162-30" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span></span>
+<span id="cb162-31"><a href="#cb162-31" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb162-32"><a href="#cb162-32" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb162-33"><a href="#cb162-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(borough)) <span class="sc">%&gt;%</span></span>
+<span id="cb162-34"><a href="#cb162-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-35"><a href="#cb162-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3) Clean sale price</span></span>
+<span id="cb162-36"><a href="#cb162-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb162-37"><a href="#cb162-37" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_price =</span> <span class="fu">suppressWarnings</span>(</span>
+<span id="cb162-38"><a href="#cb162-38" aria-hidden="true" tabindex="-1"></a>        <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, sale_price_raw))</span>
+<span id="cb162-39"><a href="#cb162-39" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb162-40"><a href="#cb162-40" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb162-41"><a href="#cb162-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-42"><a href="#cb162-42" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4) Robust date parsing (Excel numbers + various text formats)</span></span>
+<span id="cb162-43"><a href="#cb162-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb162-44"><a href="#cb162-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date_num  =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(sale_date_raw)),</span>
+<span id="cb162-45"><a href="#cb162-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">date_from_num  =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.Date</span>(sale_date_num, <span class="at">origin =</span> <span class="st">"1899-12-30"</span>)),</span>
+<span id="cb162-46"><a href="#cb162-46" aria-hidden="true" tabindex="-1"></a>      <span class="at">date_from_char =</span> <span class="fu">suppressWarnings</span>(</span>
+<span id="cb162-47"><a href="#cb162-47" aria-hidden="true" tabindex="-1"></a>        <span class="fu">parse_date_time</span>(sale_date_raw, <span class="at">orders =</span> <span class="fu">c</span>(<span class="st">"ymd"</span>, <span class="st">"mdy"</span>, <span class="st">"dmy"</span>))</span>
+<span id="cb162-48"><a href="#cb162-48" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb162-49"><a href="#cb162-49" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date      =</span> <span class="fu">coalesce</span>(date_from_num, date_from_char)</span>
+<span id="cb162-50"><a href="#cb162-50" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb162-51"><a href="#cb162-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-52"><a href="#cb162-52" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 5) Keep only reasonable, non-missing sales</span></span>
+<span id="cb162-53"><a href="#cb162-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(</span>
+<span id="cb162-54"><a href="#cb162-54" aria-hidden="true" tabindex="-1"></a>      <span class="sc">!</span><span class="fu">is.na</span>(sale_price),</span>
+<span id="cb162-55"><a href="#cb162-55" aria-hidden="true" tabindex="-1"></a>      sale_price <span class="sc">&gt;</span> <span class="dv">10000</span>,</span>
+<span id="cb162-56"><a href="#cb162-56" aria-hidden="true" tabindex="-1"></a>      <span class="sc">!</span><span class="fu">is.na</span>(sale_date)</span>
+<span id="cb162-57"><a href="#cb162-57" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb162-58"><a href="#cb162-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-59"><a href="#cb162-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 6) Final columns in same format as other years</span></span>
+<span id="cb162-60"><a href="#cb162-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(</span>
+<span id="cb162-61"><a href="#cb162-61" aria-hidden="true" tabindex="-1"></a>      year,</span>
+<span id="cb162-62"><a href="#cb162-62" aria-hidden="true" tabindex="-1"></a>      borough,</span>
+<span id="cb162-63"><a href="#cb162-63" aria-hidden="true" tabindex="-1"></a>      <span class="at">neighborhood =</span> neighborhood_raw,</span>
+<span id="cb162-64"><a href="#cb162-64" aria-hidden="true" tabindex="-1"></a>      <span class="at">address      =</span> address_raw,</span>
+<span id="cb162-65"><a href="#cb162-65" aria-hidden="true" tabindex="-1"></a>      <span class="at">zip_code     =</span> zip_code_raw,</span>
+<span id="cb162-66"><a href="#cb162-66" aria-hidden="true" tabindex="-1"></a>      sale_price,</span>
+<span id="cb162-67"><a href="#cb162-67" aria-hidden="true" tabindex="-1"></a>      <span class="at">sale_date    =</span> <span class="fu">as.Date</span>(sale_date)</span>
+<span id="cb162-68"><a href="#cb162-68" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb162-69"><a href="#cb162-69" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(year, borough, sale_date)</span>
+<span id="cb162-70"><a href="#cb162-70" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb163"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb163-1"><a href="#cb163-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create cleaned tables for each period</span></span>
+<span id="cb163-2"><a href="#cb163-2" aria-hidden="true" tabindex="-1"></a>sales_clean_2013_2017 <span class="ot">&lt;-</span> <span class="fu">clean_2013_2017</span>(sales_raw_2013_2017)</span>
+<span id="cb163-3"><a href="#cb163-3" aria-hidden="true" tabindex="-1"></a>sales_clean_2018_2019 <span class="ot">&lt;-</span> <span class="fu">clean_2018_2019</span>(sales_raw_2018_2019)</span>
+<span id="cb163-4"><a href="#cb163-4" aria-hidden="true" tabindex="-1"></a>sales_clean_2020_2023 <span class="ot">&lt;-</span> <span class="fu">clean_2020_2023</span>(sales_raw_2020_2023)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb164-2"><a href="#cb164-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-3"><a href="#cb164-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Make sure sale_date is Date in every piece</span></span>
+<span id="cb164-4"><a href="#cb164-4" aria-hidden="true" tabindex="-1"></a>sales_clean_2013_2017 <span class="ot">&lt;-</span> sales_clean_2013_2017 <span class="sc">%&gt;%</span></span>
+<span id="cb164-5"><a href="#cb164-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sale_date =</span> <span class="fu">as.Date</span>(sale_date))</span>
+<span id="cb164-6"><a href="#cb164-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-7"><a href="#cb164-7" aria-hidden="true" tabindex="-1"></a>sales_clean_2018_2019 <span class="ot">&lt;-</span> sales_clean_2018_2019 <span class="sc">%&gt;%</span></span>
+<span id="cb164-8"><a href="#cb164-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sale_date =</span> <span class="fu">as.Date</span>(sale_date))</span>
+<span id="cb164-9"><a href="#cb164-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-10"><a href="#cb164-10" aria-hidden="true" tabindex="-1"></a>sales_clean_2020_2023 <span class="ot">&lt;-</span> sales_clean_2020_2023 <span class="sc">%&gt;%</span></span>
+<span id="cb164-11"><a href="#cb164-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sale_date =</span> <span class="fu">as.Date</span>(sale_date))</span>
+<span id="cb164-12"><a href="#cb164-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-13"><a href="#cb164-13" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Combine all years 2013–2023 ----</span></span>
+<span id="cb164-14"><a href="#cb164-14" aria-hidden="true" tabindex="-1"></a>sales_clean_2013_2023 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb164-15"><a href="#cb164-15" aria-hidden="true" tabindex="-1"></a>  sales_clean_2013_2017,</span>
+<span id="cb164-16"><a href="#cb164-16" aria-hidden="true" tabindex="-1"></a>  sales_clean_2018_2019,</span>
+<span id="cb164-17"><a href="#cb164-17" aria-hidden="true" tabindex="-1"></a>  sales_clean_2020_2023</span>
+<span id="cb164-18"><a href="#cb164-18" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb164-19"><a href="#cb164-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(year, borough, sale_date)</span>
+<span id="cb164-20"><a href="#cb164-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb164-21"><a href="#cb164-21" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Final quick checks ----</span></span>
+<span id="cb164-22"><a href="#cb164-22" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Combined 2013–2023:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Combined 2013–2023:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">table</span>(sales_clean_2013_2023<span class="sc">$</span>year))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023 
+60218 59839 62938 60756 60866 56817 55983 43788 70829 65899 49475 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(sales_clean_2013_2023<span class="sc">$</span>sale_date, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2013-01-01" "2023-12-31"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb170"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb170-1"><a href="#cb170-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sales_clean_2013_2023<span class="sc">$</span>sale_price)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+1.000e+04 4.000e+05 6.700e+05 1.818e+06 1.160e+06 4.111e+09 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sales_clean_2013_2023)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 7
+   year borough neighborhood            address   zip_code sale_price sale_date 
+  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                   &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt; &lt;date&gt;    
+1  2013 Bronx   MELROSE/CONCOURSE       1072 GRA… 10456        270000 2013-01-01
+2  2013 Bronx   KINGSBRIDGE/JEROME PARK 3875 WAL… 10463         94302 2013-01-03
+3  2013 Bronx   MELROSE/CONCOURSE       860 GRAN… 10451         50001 2013-01-03
+4  2013 Bronx   MORRISANIA/LONGWOOD     700-704 … 10455        439082 2013-01-03
+5  2013 Bronx   SOUNDVIEW               1420 NOB… 10472       7050000 2013-01-03
+6  2013 Bronx   THROGS NECK             2921 MIL… 10465        290000 2013-01-03</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb174"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb174-1"><a href="#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(sales_clean_2013_2023)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 7
+   year borough       neighborhood      address   zip_code sale_price sale_date 
+  &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;             &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt; &lt;date&gt;    
+1  2023 Staten Island PLEASANT PLAINS   30 CORDE… 10309       1100000 2023-12-29
+2  2023 Staten Island SOUTH BEACH       12 MALLO… 10305        850000 2023-12-29
+3  2023 Staten Island SOUTH BEACH       16 MALLO… 10305        850000 2023-12-29
+4  2023 Staten Island STAPLETON         64 HARRI… 10304        753000 2023-12-29
+5  2023 Staten Island SUNNYSIDE         55 ONTAR… 10301        463500 2023-12-29
+6  2023 Staten Island WEST NEW BRIGHTON 154 ELIZ… 10310        745000 2023-12-29</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb176"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb176-1"><a href="#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"finalproject"</span>))){</span>
+<span id="cb176-2"><a href="#cb176-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"finalproject"</span>), <span class="at">showWarnings=</span><span class="cn">FALSE</span>, <span class="at">recursive=</span><span class="cn">TRUE</span>)</span>
+<span id="cb176-3"><a href="#cb176-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb176-4"><a href="#cb176-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb176-5"><a href="#cb176-5" aria-hidden="true" tabindex="-1"></a>library <span class="ot">&lt;-</span> <span class="cf">function</span>(pkg){</span>
+<span id="cb176-6"><a href="#cb176-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Mask base::library() to automatically install packages if needed</span></span>
+<span id="cb176-7"><a href="#cb176-7" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Masking is important here so downlit picks up packages and links</span></span>
+<span id="cb176-8"><a href="#cb176-8" aria-hidden="true" tabindex="-1"></a>  <span class="do">## to documentation</span></span>
+<span id="cb176-9"><a href="#cb176-9" aria-hidden="true" tabindex="-1"></a>  pkg <span class="ot">&lt;-</span> <span class="fu">as.character</span>(<span class="fu">substitute</span>(pkg))</span>
+<span id="cb176-10"><a href="#cb176-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://cloud.r-project.org"</span>))</span>
+<span id="cb176-11"><a href="#cb176-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(pkg, <span class="at">character.only=</span><span class="cn">TRUE</span>, <span class="at">quietly=</span><span class="cn">TRUE</span>)) <span class="fu">install.packages</span>(pkg)</span>
+<span id="cb176-12"><a href="#cb176-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">require</span>(pkg, <span class="at">character.only=</span><span class="cn">TRUE</span>, <span class="at">quietly=</span><span class="cn">TRUE</span>))</span>
+<span id="cb176-13"><a href="#cb176-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb176-14"><a href="#cb176-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb176-15"><a href="#cb176-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ forcats 1.0.1     ✔ readr   2.1.5
+✔ ggplot2 4.0.0     ✔ tibble  3.3.0
+✔ purrr   1.1.0     ✔ tidyr   1.3.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb178"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
+<span id="cb178-2"><a href="#cb178-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb178-3"><a href="#cb178-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidycensus)</span>
+<span id="cb178-4"><a href="#cb178-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb178-5"><a href="#cb178-5" aria-hidden="true" tabindex="-1"></a>get_acs_all_years <span class="ot">&lt;-</span> <span class="cf">function</span>(variable, <span class="at">geography=</span><span class="st">"zcta"</span>,</span>
+<span id="cb178-6"><a href="#cb178-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">start_year=</span><span class="dv">2013</span>, <span class="at">end_year=</span><span class="dv">2023</span>){</span>
+<span id="cb178-7"><a href="#cb178-7" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"{variable}_{geography}_{start_year}_{end_year}.csv"</span>)</span>
+<span id="cb178-8"><a href="#cb178-8" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"finalproject"</span>, fname)</span>
+<span id="cb178-9"><a href="#cb178-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb178-10"><a href="#cb178-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(fname)){</span>
+<span id="cb178-11"><a href="#cb178-11" aria-hidden="true" tabindex="-1"></a>    YEARS <span class="ot">&lt;-</span> <span class="fu">seq</span>(start_year, end_year)</span>
+<span id="cb178-12"><a href="#cb178-12" aria-hidden="true" tabindex="-1"></a>    YEARS <span class="ot">&lt;-</span> YEARS[YEARS <span class="sc">!=</span> <span class="dv">2020</span>] <span class="co"># Drop 2020 - No survey (covid)</span></span>
+<span id="cb178-13"><a href="#cb178-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb178-14"><a href="#cb178-14" aria-hidden="true" tabindex="-1"></a>    ALL_DATA <span class="ot">&lt;-</span> <span class="fu">map</span>(YEARS, <span class="cf">function</span>(yy){</span>
+<span id="cb178-15"><a href="#cb178-15" aria-hidden="true" tabindex="-1"></a>      tidycensus<span class="sc">::</span><span class="fu">get_acs</span>(geography, variable, <span class="at">year=</span>yy, <span class="at">survey=</span><span class="st">"acs5"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb178-16"><a href="#cb178-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">year=</span>yy) <span class="sc">|&gt;</span></span>
+<span id="cb178-17"><a href="#cb178-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="sc">-</span>moe, <span class="sc">-</span>variable) <span class="sc">|&gt;</span></span>
+<span id="cb178-18"><a href="#cb178-18" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="sc">!!</span><span class="at">variable :=</span> estimate)</span>
+<span id="cb178-19"><a href="#cb178-19" aria-hidden="true" tabindex="-1"></a>    }) <span class="sc">|&gt;</span> <span class="fu">bind_rows</span>()</span>
+<span id="cb178-20"><a href="#cb178-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb178-21"><a href="#cb178-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write_csv</span>(ALL_DATA, fname)</span>
+<span id="cb178-22"><a href="#cb178-22" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb178-23"><a href="#cb178-23" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb178-24"><a href="#cb178-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(fname, <span class="at">show_col_types=</span><span class="cn">FALSE</span>)</span>
+<span id="cb178-25"><a href="#cb178-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb178-26"><a href="#cb178-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb178-27"><a href="#cb178-27" aria-hidden="true" tabindex="-1"></a>NYC_ZCTAS <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb178-28"><a href="#cb178-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Bronx (005)</span></span>
+<span id="cb178-29"><a href="#cb178-29" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10451"</span>, <span class="st">"10452"</span>, <span class="st">"10453"</span>, <span class="st">"10454"</span>, <span class="st">"10455"</span>, <span class="st">"10456"</span>, <span class="st">"10457"</span>, <span class="st">"10458"</span>, </span>
+<span id="cb178-30"><a href="#cb178-30" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10459"</span>, <span class="st">"10460"</span>, <span class="st">"10461"</span>, <span class="st">"10462"</span>, <span class="st">"10463"</span>, <span class="st">"10464"</span>, <span class="st">"10465"</span>, <span class="st">"10466"</span>, </span>
+<span id="cb178-31"><a href="#cb178-31" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10467"</span>, <span class="st">"10468"</span>, <span class="st">"10469"</span>, <span class="st">"10470"</span>, <span class="st">"10471"</span>, <span class="st">"10472"</span>, <span class="st">"10473"</span>, <span class="st">"10474"</span>, </span>
+<span id="cb178-32"><a href="#cb178-32" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10475"</span>,</span>
+<span id="cb178-33"><a href="#cb178-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Brooklyn (047) - Kings County</span></span>
+<span id="cb178-34"><a href="#cb178-34" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11201"</span>, <span class="st">"11203"</span>, <span class="st">"11204"</span>, <span class="st">"11205"</span>, <span class="st">"11206"</span>, <span class="st">"11207"</span>, <span class="st">"11208"</span>, <span class="st">"11209"</span>, </span>
+<span id="cb178-35"><a href="#cb178-35" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11210"</span>, <span class="st">"11211"</span>, <span class="st">"11212"</span>, <span class="st">"11213"</span>, <span class="st">"11214"</span>, <span class="st">"11215"</span>, <span class="st">"11216"</span>, <span class="st">"11217"</span>, </span>
+<span id="cb178-36"><a href="#cb178-36" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11218"</span>, <span class="st">"11219"</span>, <span class="st">"11220"</span>, <span class="st">"11221"</span>, <span class="st">"11222"</span>, <span class="st">"11223"</span>, <span class="st">"11224"</span>, <span class="st">"11225"</span>, </span>
+<span id="cb178-37"><a href="#cb178-37" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11226"</span>, <span class="st">"11228"</span>, <span class="st">"11229"</span>, <span class="st">"11230"</span>, <span class="st">"11231"</span>, <span class="st">"11232"</span>, <span class="st">"11233"</span>, <span class="st">"11234"</span>, </span>
+<span id="cb178-38"><a href="#cb178-38" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11235"</span>, <span class="st">"11236"</span>, <span class="st">"11237"</span>, <span class="st">"11238"</span>, <span class="st">"11239"</span>,</span>
+<span id="cb178-39"><a href="#cb178-39" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Manhattan (061) - New York County</span></span>
+<span id="cb178-40"><a href="#cb178-40" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10001"</span>, <span class="st">"10002"</span>, <span class="st">"10003"</span>, <span class="st">"10004"</span>, <span class="st">"10005"</span>, <span class="st">"10006"</span>, <span class="st">"10007"</span>, <span class="st">"10009"</span>, </span>
+<span id="cb178-41"><a href="#cb178-41" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10010"</span>, <span class="st">"10011"</span>, <span class="st">"10012"</span>, <span class="st">"10013"</span>, <span class="st">"10014"</span>, <span class="st">"10016"</span>, <span class="st">"10017"</span>, <span class="st">"10018"</span>, </span>
+<span id="cb178-42"><a href="#cb178-42" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10019"</span>, <span class="st">"10020"</span>, <span class="st">"10021"</span>, <span class="st">"10022"</span>, <span class="st">"10023"</span>, <span class="st">"10024"</span>, <span class="st">"10025"</span>, <span class="st">"10026"</span>, </span>
+<span id="cb178-43"><a href="#cb178-43" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10027"</span>, <span class="st">"10028"</span>, <span class="st">"10029"</span>, <span class="st">"10030"</span>, <span class="st">"10031"</span>, <span class="st">"10032"</span>, <span class="st">"10033"</span>, <span class="st">"10034"</span>, </span>
+<span id="cb178-44"><a href="#cb178-44" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10035"</span>, <span class="st">"10036"</span>, <span class="st">"10037"</span>, <span class="st">"10038"</span>, <span class="st">"10039"</span>, <span class="st">"10040"</span>, <span class="st">"10044"</span>,</span>
+<span id="cb178-45"><a href="#cb178-45" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Queens (081)</span></span>
+<span id="cb178-46"><a href="#cb178-46" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11101"</span>, <span class="st">"11102"</span>, <span class="st">"11103"</span>, <span class="st">"11104"</span>, <span class="st">"11105"</span>, <span class="st">"11106"</span>, <span class="st">"11354"</span>, <span class="st">"11355"</span>, </span>
+<span id="cb178-47"><a href="#cb178-47" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11356"</span>, <span class="st">"11357"</span>, <span class="st">"11358"</span>, <span class="st">"11360"</span>, <span class="st">"11361"</span>, <span class="st">"11362"</span>, <span class="st">"11363"</span>, <span class="st">"11364"</span>, </span>
+<span id="cb178-48"><a href="#cb178-48" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11365"</span>, <span class="st">"11366"</span>, <span class="st">"11367"</span>, <span class="st">"11368"</span>, <span class="st">"11369"</span>, <span class="st">"11370"</span>, <span class="st">"11371"</span>, <span class="st">"11372"</span>, </span>
+<span id="cb178-49"><a href="#cb178-49" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11373"</span>, <span class="st">"11374"</span>, <span class="st">"11375"</span>, <span class="st">"11377"</span>, <span class="st">"11378"</span>, <span class="st">"11379"</span>, <span class="st">"11385"</span>, <span class="st">"11411"</span>, </span>
+<span id="cb178-50"><a href="#cb178-50" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11412"</span>, <span class="st">"11413"</span>, <span class="st">"11414"</span>, <span class="st">"11415"</span>, <span class="st">"11416"</span>, <span class="st">"11417"</span>, <span class="st">"11418"</span>, <span class="st">"11419"</span>, </span>
+<span id="cb178-51"><a href="#cb178-51" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11420"</span>, <span class="st">"11421"</span>, <span class="st">"11422"</span>, <span class="st">"11423"</span>, <span class="st">"11426"</span>, <span class="st">"11427"</span>, <span class="st">"11428"</span>, <span class="st">"11429"</span>, </span>
+<span id="cb178-52"><a href="#cb178-52" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11432"</span>, <span class="st">"11433"</span>, <span class="st">"11434"</span>, <span class="st">"11435"</span>, <span class="st">"11436"</span>, <span class="st">"11691"</span>, <span class="st">"11692"</span>, <span class="st">"11693"</span>, </span>
+<span id="cb178-53"><a href="#cb178-53" aria-hidden="true" tabindex="-1"></a>  <span class="st">"11694"</span>, <span class="st">"11695"</span>, <span class="st">"11697"</span>,</span>
+<span id="cb178-54"><a href="#cb178-54" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Staten Island (085) - Richmond County</span></span>
+<span id="cb178-55"><a href="#cb178-55" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10301"</span>, <span class="st">"10302"</span>, <span class="st">"10303"</span>, <span class="st">"10304"</span>, <span class="st">"10305"</span>, <span class="st">"10306"</span>, <span class="st">"10307"</span>, <span class="st">"10308"</span>, </span>
+<span id="cb178-56"><a href="#cb178-56" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10309"</span>, <span class="st">"10310"</span>, <span class="st">"10311"</span>, <span class="st">"10312"</span>, <span class="st">"10314"</span></span>
+<span id="cb178-57"><a href="#cb178-57" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb178-58"><a href="#cb178-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Household income (12 month)</span></span>
+<span id="cb178-59"><a href="#cb178-59" aria-hidden="true" tabindex="-1"></a>INCOME <span class="ot">&lt;-</span> <span class="fu">get_acs_all_years</span>(<span class="st">"B19013_001"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb178-60"><a href="#cb178-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">household_income =</span> B19013_001)</span>
+<span id="cb178-61"><a href="#cb178-61" aria-hidden="true" tabindex="-1"></a>INCOME <span class="ot">&lt;-</span> INCOME <span class="sc">|&gt;</span></span>
+<span id="cb178-62"><a href="#cb178-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(GEOID <span class="sc">%in%</span> NYC_ZCTAS)</span>
+<span id="cb178-63"><a href="#cb178-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb178-64"><a href="#cb178-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Monthly rent</span></span>
+<span id="cb178-65"><a href="#cb178-65" aria-hidden="true" tabindex="-1"></a>RENT <span class="ot">&lt;-</span> <span class="fu">get_acs_all_years</span>(<span class="st">"B25064_001"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb178-66"><a href="#cb178-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">monthly_rent =</span> B25064_001)</span>
+<span id="cb178-67"><a href="#cb178-67" aria-hidden="true" tabindex="-1"></a>RENT  <span class="ot">&lt;-</span> RENT  <span class="sc">|&gt;</span></span>
+<span id="cb178-68"><a href="#cb178-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(GEOID <span class="sc">%in%</span> NYC_ZCTAS)</span>
+<span id="cb178-69"><a href="#cb178-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb178-70"><a href="#cb178-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine tables</span></span>
+<span id="cb178-71"><a href="#cb178-71" aria-hidden="true" tabindex="-1"></a>JOIN_TABLE <span class="ot">&lt;-</span> INCOME <span class="sc">|&gt;</span></span>
+<span id="cb178-72"><a href="#cb178-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(RENT, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"GEOID"</span>, <span class="st">"year"</span>,<span class="st">"NAME"</span> )) <span class="sc">|&gt;</span></span>
+<span id="cb178-73"><a href="#cb178-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">zipcode =</span> <span class="st">"GEOID"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb178-74"><a href="#cb178-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>NAME)</span>
+<span id="cb178-75"><a href="#cb178-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb178-76"><a href="#cb178-76" aria-hidden="true" tabindex="-1"></a><span class="do">## optional function to format the column name</span></span>
+<span id="cb178-77"><a href="#cb178-77" aria-hidden="true" tabindex="-1"></a>format_titles <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
+<span id="cb178-78"><a href="#cb178-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">colnames</span>(df) <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(<span class="fu">colnames</span>(df), <span class="st">"_"</span>, <span class="st">" "</span>) <span class="sc">|&gt;</span> <span class="fu">str_to_title</span>()</span>
+<span id="cb178-79"><a href="#cb178-79" aria-hidden="true" tabindex="-1"></a>  df</span>
+<span id="cb178-80"><a href="#cb178-80" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb178-81"><a href="#cb178-81" aria-hidden="true" tabindex="-1"></a>JOIN_TABLE <span class="sc">|&gt;</span> </span>
+<span id="cb178-82"><a href="#cb178-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">format_titles</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1,720 × 4
+   Zipcode `Household Income`  Year `Monthly Rent`
+   &lt;chr&gt;                &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt;
+ 1 10001                81671  2013           1830
+ 2 10002                33218  2013            848
+ 3 10003                92540  2013           1855
+ 4 10004               129313  2013           2001
+ 5 10005               124670  2013           2001
+ 6 10006               119274  2013           2001
+ 7 10007               216037  2013           2001
+ 8 10009                59929  2013           1436
+ 9 10010                97955  2013           2001
+10 10011               104238  2013           1911
+# ℹ 1,710 more rows</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb180"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb180-2"><a href="#cb180-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb180-3"><a href="#cb180-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb180-4"><a href="#cb180-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb180-5"><a href="#cb180-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'scales'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:purrr':
+
+    discard</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:readr':
+
+    col_factor</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb184"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb184-1"><a href="#cb184-1" aria-hidden="true" tabindex="-1"></a>sales_zip_year <span class="ot">&lt;-</span> sales_clean_2013_2023 <span class="sc">%&gt;%</span></span>
+<span id="cb184-2"><a href="#cb184-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># make sure year is from sale_date</span></span>
+<span id="cb184-3"><a href="#cb184-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb184-4"><a href="#cb184-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">year     =</span> <span class="fu">year</span>(sale_date),</span>
+<span id="cb184-5"><a href="#cb184-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">zip_code =</span> <span class="fu">as.character</span>(zip_code)</span>
+<span id="cb184-6"><a href="#cb184-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb184-7"><a href="#cb184-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(borough, zip_code, year) <span class="sc">%&gt;%</span></span>
+<span id="cb184-8"><a href="#cb184-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb184-9"><a href="#cb184-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_price =</span> <span class="fu">mean</span>(sale_price, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb184-10"><a href="#cb184-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_price =</span> <span class="fu">median</span>(sale_price, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb184-11"><a href="#cb184-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_sales =</span> <span class="fu">n</span>(),</span>
+<span id="cb184-12"><a href="#cb184-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb184-13"><a href="#cb184-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb184-14"><a href="#cb184-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">zipcode =</span> zip_code)  <span class="co"># match JOIN_TABLE column name</span></span>
+<span id="cb184-15"><a href="#cb184-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb184-16"><a href="#cb184-16" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sales_zip_year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 6
+  borough zipcode  year avg_price median_price n_sales
+  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;   &lt;int&gt;
+1 Bronx   0        2014   225620.       200000       5
+2 Bronx   0        2015    52949         52949       1
+3 Bronx   0        2016   449246.       185000      41
+4 Bronx   0        2017   610561.       475000      33
+5 Bronx   0        2018   756136.       350000      33
+6 Bronx   10451    2013  1097049.       241567      66</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb186"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb186-1"><a href="#cb186-1" aria-hidden="true" tabindex="-1"></a>model_df <span class="ot">&lt;-</span> sales_zip_year <span class="sc">%&gt;%</span></span>
+<span id="cb186-2"><a href="#cb186-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(JOIN_TABLE, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"zipcode"</span>, <span class="st">"year"</span>))</span>
+<span id="cb186-3"><a href="#cb186-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb186-4"><a href="#cb186-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(model_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 8
+  borough zipcode  year avg_price median_price n_sales household_income
+  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;   &lt;int&gt;            &lt;dbl&gt;
+1 Bronx   10451    2013  1097049.       241567      66            26754
+2 Bronx   10451    2014  1018100.       220000      92            27197
+3 Bronx   10451    2015  1389294.       210000      99            26048
+4 Bronx   10451    2016  1197421.       287500     114            26419
+5 Bronx   10451    2017  3117134.       349845     104            26979
+6 Bronx   10451    2018  1513736.       434500     112            28921
+# ℹ 1 more variable: monthly_rent &lt;dbl&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb188"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb188-1"><a href="#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(model_df,</span>
+<span id="cb188-2"><a href="#cb188-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> household_income,</span>
+<span id="cb188-3"><a href="#cb188-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> avg_price,</span>
+<span id="cb188-4"><a href="#cb188-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> borough)) <span class="sc">+</span></span>
+<span id="cb188-5"><a href="#cb188-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="fl">1.6</span>) <span class="sc">+</span></span>
+<span id="cb188-6"><a href="#cb188-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb188-7"><a href="#cb188-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_dollar</span>()) <span class="sc">+</span></span>
+<span id="cb188-8"><a href="#cb188-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_dollar</span>()) <span class="sc">+</span></span>
+<span id="cb188-9"><a href="#cb188-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3000000</span>)) <span class="sc">+</span>   <span class="co"># ← zoom to meaningful range</span></span>
+<span id="cb188-10"><a href="#cb188-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb188-11"><a href="#cb188-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Income vs. Average Housing Prices by ZIP (2013–2023)"</span>,</span>
+<span id="cb188-12"><a href="#cb188-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Each point is a ZIP–year; linear trend shown by borough"</span>,</span>
+<span id="cb188-13"><a href="#cb188-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Median Household Income (ACS)"</span>,</span>
+<span id="cb188-14"><a href="#cb188-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Average Sale Price"</span>,</span>
+<span id="cb188-15"><a href="#cb188-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Borough"</span></span>
+<span id="cb188-16"><a href="#cb188-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb188-17"><a href="#cb188-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 3 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 3 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="final_projectdataset_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb192"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb192-1"><a href="#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(model_df,</span>
+<span id="cb192-2"><a href="#cb192-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> monthly_rent,</span>
+<span id="cb192-3"><a href="#cb192-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> avg_price,</span>
+<span id="cb192-4"><a href="#cb192-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> borough)) <span class="sc">+</span></span>
+<span id="cb192-5"><a href="#cb192-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="fl">1.6</span>) <span class="sc">+</span></span>
+<span id="cb192-6"><a href="#cb192-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb192-7"><a href="#cb192-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_dollar</span>()) <span class="sc">+</span></span>
+<span id="cb192-8"><a href="#cb192-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_dollar</span>()) <span class="sc">+</span></span>
+<span id="cb192-9"><a href="#cb192-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3000000</span>)) <span class="sc">+</span>   <span class="co"># ← prevents compression</span></span>
+<span id="cb192-10"><a href="#cb192-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb192-11"><a href="#cb192-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Rent vs. Average Housing Prices by ZIP (2013–2023)"</span>,</span>
+<span id="cb192-12"><a href="#cb192-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Each point is a ZIP–year; linear trend shown by borough"</span>,</span>
+<span id="cb192-13"><a href="#cb192-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Median Monthly Rent (ACS)"</span>,</span>
+<span id="cb192-14"><a href="#cb192-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Average Sale Price"</span>,</span>
+<span id="cb192-15"><a href="#cb192-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Borough"</span></span>
+<span id="cb192-16"><a href="#cb192-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb192-17"><a href="#cb192-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 7 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="final_projectdataset_files/figure-html/unnamed-chunk-9-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/yuer0604\.github\.io\/STA9750-2025-FALL\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
