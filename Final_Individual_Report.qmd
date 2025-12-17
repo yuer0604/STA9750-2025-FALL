@@ -6,6 +6,8 @@ format:
   html:
     code-fold: true
     code-summary: "Show code"
+project:
+  output-dir: docs
 ---
 # Introduction & Motivation
 
